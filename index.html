@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Tomar - Data Science Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Arjun Tomar</div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Arjun Tomar</h1>
+                <h2 class="hero-subtitle">Data Science | AI | Cloud Enthusiast</h2>
+                <p class="hero-description">
+                    Hi, I'm Arjun — a BCA student passionate about turning data into intelligent insights. 
+                    Skilled in Python, Machine Learning, and Cloud Infrastructure.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/ARJUN-0402" class="btn btn-gradient hover-scale" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://in.linkedin.com/in/arjun-tomar-03328a36a" class="btn btn-glass hover-lift" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <button id="resume-download-btn" class="btn btn-primary hover-glow" onclick="downloadResume()">
+                        <i class="fas fa-download"></i> Resume
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-container">
+                        <img src="profile.jpg" alt="Arjun Tomar - BCA Student" class="profile-image" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTAwIiBjeT0iMTAwIiByPSIxMDAiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+PGNpcmNsZSBjeD0iMTAwIiBjeT0iMTAwIiByPSI4MCIgZmlsbD0iIzFhMTkxZSIvPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iNDAiIGZpbGw9IiM2NGZmZGEiLz48dGV4dCB4PSIxMDAiIHk9IjEwNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMWE0ZjFhIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BUjwvdGV4dD48L3N2Zz4='; this.alt='Arjun Tomar';">
+                        <div class="profile-overlay">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3> BCA Student at Uttaranchal University (2024–2027)</h3>
+                    <p>
+                        I'm currently pursuing my Bachelor of Computer Applications at Uttaranchal University, 
+                        where I'm building a strong foundation in computer science and data analysis. My passion 
+                        lies in extracting meaningful insights from complex datasets and developing intelligent 
+                        solutions using cutting-edge technologies.
+                    </p>
+                    <p>
+                        I hold multiple industry-recognized certifications from leading organizations including 
+                        IBM, Oracle, AWS, Tata, BCG, and Forage. These certifications have equipped me with 
+                        practical skills in Data Science, AI, Cybersecurity, and Cloud Computing.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BCA Student (2024-2027)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>10+ Professional Certifications</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Python & ML Specialist</span>
+                        </div>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Years Learning</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Code Commits</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>AI-Powered Stock Market Dashboard</h3>
+                    </div>
+                    <p>Interactive dashboard built with Streamlit, Plotly, and yfinance for real-time stock analysis and predictions.</p>
+                    <div class="project-demo">
+                        <button class="btn btn-neon demo-btn" onclick="showProjectDemo('stock-dashboard')">
+                            <i class="fas fa-play"></i> Live Demo
+                        </button>
+                        <button class="btn btn-minimal code-btn" onclick="showCodeSnippet('stock-dashboard')">
+                            <i class="fas fa-code"></i> Code
+                        </button>
+                    </div>
+                    <a href="https://github.com/ARJUN-0402" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h3>Employee Salary Prediction System</h3>
+                    </div>
+                    <p>Machine learning model using Pandas and Scikit-learn to predict employee salaries based on various factors.</p>
+                    <a href="https://github.com/ARJUN-0402" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fab fa-netflix"></i>
+                        <h3>Netflix Content Analysis</h3>
+                    </div>
+                    <p>Comprehensive exploratory data analysis and visualization of Netflix content library using Python.</p>
+                    <a href="https://github.com/ARJUN-0402" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Zomato Restaurant Data Analysis</h3>
+                    </div>
+                    <p>Data analysis project exploring restaurant trends and customer preferences using Python and visualization tools.</p>
+                    <a href="https://github.com/ARJUN-0402" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-cloud-sun"></i>
+                        <h3>Weather Application</h3>
+                    </div>
+                    <p>Weather forecasting app with API integration, JSON parsing, and automated data updates.</p>
+                    <a href="https://github.com/ARJUN-0402" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <i class="fab fa-ibm"></i>
+                        <h3>IBM</h3>
+                    </div>
+                    <ul class="cert-list">
+                        <li>Data Science & AI Fundamentals</li>
+                        <li>Cybersecurity Fundamentals</li>
+                    </ul>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Oracle</h3>
+                    </div>
+                    <ul class="cert-list">
+                        <li>OCI Data Science Professional</li>
+                        <li>AI Foundations Associate</li>
+                    </ul>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <i class="fab fa-aws"></i>
+                        <h3>AWS</h3>
+                    </div>
+                    <ul class="cert-list">
+                        <li>Solutions Architecture Job Simulation</li>
+                    </ul>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Industry Simulations</h3>
+                    </div>
+                    <ul class="cert-list">
+                        <li>Tata Data Science Job Simulation</li>
+                        <li>BCG Data Science Job Simulation</li>
+                    </ul>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <i class="fab fa-free-code-camp"></i>
+                        <h3>freeCodeCamp</h3>
+                    </div>
+                    <ul class="cert-list">
+                        <li>Data Analysis with Python</li>
+                        <li>Machine Learning with Python</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-tag">Python</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">JavaScript</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">HTML</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">CSS</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-chart-bar"></i> Libraries & Frameworks</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-tag">Pandas</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">NumPy</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">Matplotlib</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">Seaborn</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">TensorFlow</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">Scikit-learn</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-tag">Jupyter</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">Streamlit</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">Docker</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">OCI</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">AWS Cloud</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-tag">Analytical Thinking</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">Problem Solving</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">Communication</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-tag">Team Collaboration</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-description">
+                    I'm always interested in new opportunities and collaborations. 
+                    Feel free to reach out if you'd like to work together!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:arjuntomar0402@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://github.com/ARJUN-0402" class="contact-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://in.linkedin.com/in/arjun-tomar-03328a36a" class="contact-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Arjun Tomar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Resume Download Modal -->
+    <div id="resume-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeResumeModal()">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-file-pdf"></i>
+                <h3>Download Resume</h3>
+            </div>
+            <div class="modal-body">
+                <p>You are about to download <strong>Arjun Tomar's Resume</strong></p>
+                <div class="resume-info">
+                    <div class="info-item">
+                        <i class="fas fa-file"></i>
+                        <span>PDF Format</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <span>Arjun Tomar - BCA Student</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Data Science & AI Focus</span>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" onclick="closeResumeModal()">Cancel</button>
+                    <button class="btn btn-primary" onclick="confirmDownload()">
+                        <i class="fas fa-download"></i> Download PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Demo Modal -->
+    <div id="project-modal" class="project-modal">
+        <div class="project-modal-content">
+            <button class="close-project-modal" onclick="closeProjectModal()">&times;</button>
+            <div class="project-modal-header">
+                <h3 id="project-title">Project Demo</h3>
+                <div class="subtitle" id="project-subtitle">Interactive demonstration</div>
+            </div>
+            <div id="project-content">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
